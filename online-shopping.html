@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>onlineshopping.com</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initoal-scale=1" />
+</head>
+<body>
+<fieldset> 
+<h1><center> Welcome to onlineshopping.com</center></h1>
+<h1><center> Select the items you want to order</center></h1>
+<marquee bgcolor="Red" scrollamount="10"> Flat 20% Discount on all purchases!</marquee>
+<form>
+<select multiple required>
+<option value="Groceries" name="Groceries"> Groceries</option>
+<option value="Mobile Phone" name="Mobile Phone"> Mobile Phone</option>
+<option value="Tablet" name="Tablet"> Tablet</option>
+<option value="Desktop" name="Desktop"> Desktop</option>
+<option value="Laptop" name="Laptop"> Laptop</option>
+<option value="Washing Machine" name="Washing Machine"> Washing Machine</option>
+<option value="Refrigirator" name="Refrigerator"> Refrigerator</option>
+<option value="Air Conditioner" name="Air Conditioner"> Air Conditioner</option>
+<option value="LCD Television" name="LCD Television"> LCD Television</option>
+<option value="checkbox" name="LED Television"> LED Television</option>
+<option value="checkbox" name=" Smart Television"> Smart Television</option>
+<option value="checkbox" name="Breakfast Cereals"> Breakfast Cereals</option>
+<option value="checkbox" name="Home Theater"> Home Theater</option>
+<option value="checkbox" name="Travel Adapter"> Travel Adapter</option>
+<option value="checkbox" name="Induction Stove"> Induction Stove</option>
+<option value="checkbox" name="Solar Cooker"> Solar Cooker</option>
+<option value="checkbox" name="LPG Stove"> LPG Stove</option>
+</select>
+<h2><center> Fill the below form to order your items.</center></h2>
+<label> Enter your name:</label>
+<input type="text" required />
+<br> <br>
+<p> Select your gender:</p>
+<input type="radio" name="gender" value="male" id="male">
+<label for="male"> Male</label>
+<br>
+<input type="radio" name="gender" value="female" id="female">
+<label for="female"> Female</label>
+<br> <br>
+<label> Enter your age:</label>
+<input type="number" id="age" required />
+<br> <br>
+<label> Enter your phone number:</label>
+<input type="tel" required maxlength="10" />
+<br> <br>
+<label> Enter your eMail id:</label>
+<input type="email" required />
+<br> <br>
+<p> Enter your shipping address:</p>
+<textarea rows="10" cols="30" required> </textarea>
+<br> <br>
+<label> Choose your type of payment:</label>
+<select required>
+<option value="Cash on delivery"> Cash on delivery</option>
+<option value="Card"> Card</option>
+</select>
+<br> <br>
+<label> Enter your delivery date (must not be within 24 hours):</label>
+<input type="datetime-local" required />
+<br>
+<input type="reset" value="Reset">
+<button type="button" value="Submit" onclick="alert('Thank you for choosing onlineshipping.com. Your order has been booked successfully.')"> Order my items</button>
+</form>
+</fieldset>
+<footer>
+<hr />
+<p><strong>Disclaimer:</strong>You can't choose your date of shipping your products when you are viewing this webpage through Internet Explorer or prior Safari 14.1.</p>
+<h1><center> No rights reserved.</center></h1>
+</footer>
+</body>
+</html> 
