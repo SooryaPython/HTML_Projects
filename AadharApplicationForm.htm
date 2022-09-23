@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--
+Name: S. Soorya
+Date: 23rd September 2022
+File description: Just for fun
+-->
+<html lang="en">
+<head>
+<title> Aadhar Application Form</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body id="body">
+<header>
+<h1> Aadhar Application Website</h1>
+<input type="button" name="dmode" value="Dark Mode" onclick="dmode()" />
+<input type="button" name="lmode" value="Light Mode" onclick="lmode()" />
+<input type="button" name="smode" value="Secret Mode" onclick="smode()" />
+<hr />
+</header>
+<h1> Please fill the form below:</h1>
+<fieldset>
+<form autocomplete="on" action="https://i0.wp.com/images.srkh.in/wp-content/uploads/2020/08/Thank-You-Smiley-Images-Smiley-Balloon.jpg">
+<label for="name"> Name:</label>
+<input type="text" name="name" id="name" placeholder="Name" autofocus required />
+<br />
+<label for="fname">Family's name*:</label>
+<input type="text" name="fname" id="fname" placeholder="Family name" required/>
+<br />
+<label for="age"> Age**:</label>
+<input type="number" name="age" id="age" placeholder="**" required/>
+<br />
+<label for="e-mail">E-mail:</label>
+<input type="email" name="e-mail" id="e-mail" placeholder="someone@example.com" required />
+<br />
+<label for="ph.no">Phone number**:</label>
+<input type="tel" name="ph.no" id="ph.no" value="+91 " />
+<br />
+<label for="faname">Father's name*:</label>
+<input type="text" name="faname" id="faname" placeholder="Father's Name" required />
+<p> Your father's status*:</p>	
+<label for="?alive"> Alive</label>
+<input type="radio" name="status" id="?alive" value="Alive" />
+<label for="?dead"> Dead</label>
+<input type="radio" name="status" id="?dead" value="Dead" />
+<br />
+<label for="maname">Mother's name*:</label>
+<input type="text" name="maname" id="maname" placeholder="Mother's Name" />
+<p> Your mother's status*:</p>	
+<label for="?alive"> Alive</label>
+<input type="radio" name="status" id="?alive" value="Alive" />
+<label for="?dead"> Dead</label>
+<input type="radio" name="status" id="?dead" value="Dead" />
+<br />
+<label for="address"> Address:</label>
+<textarea name="address" id="address" rows="10" cols="30" placeholder="Address" required></textarea>
+<br />
+<label for="dob"> Date of birth:</label>
+<input type="date" name="dob" id="dob" required />
+<br />
+<label for="gender"> Gender:</label>
+<select name="gender" id="gender" required>
+<option name="male"> Male</option>
+<option name="female"> Female</option>
+<option name="trans"> Transgender</option>
+</select>
+<br />
+<label for="color"> Your favourite color:</label>
+<input type="color" name="fav_color" id="color" required />
+<br />
+<label for="range"> Enter a value:</label>
+<input type="range" name="range" id="range" min="1" max="100" required />
+<br />
+<input type="submit" name="submit" value="Submit" />	
+<input type="reset" name="reset" value="Reset" />
+</form>
+</fieldset>
+<input type="button" name="print" id="print" value="Print this page" onclick="window.print()" />
+<noscript>
+<h1> I guess you can't print and change the themes in this webpage through the buttons given above because the browser 
+does not support JavaScript.</h1>
+</noscript>
+<footer>
+<hr />
+<address>S. Soorya</address>
+<h4><strong>Disclaimer:</strong></h4>
+<p> This is NOT a reat Aadhar application device</p>
+<p> *Type 'None' if you do not know it</p>
+<p> **Numbers only allowed</p>
+</footer>
+</body>
+<script>
+function dmode() {
+document.getElementById("body").style.backgroundColor = "black";
+document.getElementById("body").style.color = "white";
+}
+function lmode() {
+document.getElementById("body").style.backgroundColor = "white";
+document.getElementById("body").style.color = "black";
+}
+function smode() {
+document.getElementById("body").style.backgroundColor = "black";
+document.getElementById("body").style.color = "yellow";
+}
+</script>
+</html>
