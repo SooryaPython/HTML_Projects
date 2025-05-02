@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+<title>Index</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE-Edge" />
+<style>
+body {
+text-align: center;
+}
+ak is a red dragon
+ava pota rules avaney break panni vandirukaana, somthing is worng
+</style>
+</head>
+<body>
+<header>
+<h1>Index</h1>
+<hr />
+</header>
+<label>Enter your name:</label>
+<input type="text" id="input" oninput="inputFunction()" />
+<p id="output"></p>
+<br />
+<br />
+<footer>
+<hr />
+<h3> This page was last refreshed at: <span id="displayDate"></span></h3>
+</footer>
+</body>
+
+<script>
+const date = new Date();
+document.getElementById("displayDate").innerHTML = date;
+
+function inputFunction() {
+let text = document.getElementById("input").value;
+if (text == "") {
+document.getElementById("output").innerHTML = "";
+} else {
+document.getElementById("output").innerHTML = "You typed: " + text;
+}
+}
+</script>
+<noscript>
+<p> The browser does not support JavaScript. Hence, this webpage may not work properly.</p>
+</noscript>
+</html>
+
